@@ -1,0 +1,44 @@
+@use "../common/vars";
+@use "../common/mixins";
+
+.container_passport{
+  box-sizing: border-box;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 20% 20px;
+  color: vars.$mainTextColor;
+  background-color: vars.$mainBackgroundColor;
+  h4{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 40px;
+  }
+  b{
+    display: block;
+    font-weight: bold;
+  }
+  ul, ol{
+    width: clamp(300px, 50%, 500px);
+    text-align: left;
+  }
+  .normal_ul li {
+    list-style-type:"– ";
+  }
+  .decimal_ul li{
+    list-style: decimal inside;
+  }
+  .none_ul li{
+    list-style: none;
+  }
+  .second_ul{
+    margin-left: 20px;
+    ol li{
+      margin-left: 20px;
+    }
+  }
+}
+
+.container_form{
+  margin: 20px auto;
+  text-align: center;
+}
