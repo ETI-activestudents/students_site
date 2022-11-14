@@ -1,0 +1,30 @@
+.passport{
+    margin: 0 auto;
+    width: 600px;
+    padding-left: 20px;
+}
+
+.passport_ul{
+    padding-left: 0;
+    text-indent: 50px;
+    margin: 0;
+}
+.passport_ol{
+    padding-left: 0;
+    text-indent: 50px;
+    margin: 0;
+}
+.passport_ol_li{
+    text-indent: 0;
+    margin-left: 70px;
+    padding-top: 2px;
+}
+.passport_li{
+    text-indent: 0;
+    margin-left: 70px;
+    list-style: disc;
+    padding-top: 2px;
+}
+span{
+    padding-left: 50px;
+}
