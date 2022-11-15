@@ -3,9 +3,9 @@
 
 .container_passport{
   box-sizing: border-box;
-  text-align: center;
+  text-align: left;
   margin: 0 auto;
-  padding: 0 20% 20px;
+  padding: 0 max(30%, 120px) 20px;
   color: vars.$mainTextColor;
   background-color: vars.$mainBackgroundColor;
   h4{
@@ -21,20 +21,21 @@
     width: clamp(300px, 50%, 500px);
     text-align: left;
   }
-  .normal_ul li {
-    list-style-type:"– ";
-  }
-  .decimal_ul li{
-    list-style: decimal inside;
-  }
-  .none_ul li{
-    list-style: none;
-  }
-  .second_ul{
+}
+
+.none_ul > li{
+  list-style: none;
+}
+.normal_ul > li {
+  list-style: disc inside;
+}
+.decimal_ul > li{
+  list-style: decimal inside;
+}
+.second_ul{
+  margin-left: 20px;
+  ol li{
     margin-left: 20px;
-    ol li{
-      margin-left: 20px;
-    }
   }
 }
 
