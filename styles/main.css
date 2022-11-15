@@ -58,18 +58,16 @@ a {
   padding: 0 max(30%, 120px) 20px;
   color: black;
   background-color: #DED4D4;
+  font: 300 1em/1em "Poppins", sans-serif;
 }
 .container_passport h4 {
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 40px;
+  font: 700 1.4em/2em "Poppins", sans-serif;
 }
 .container_passport b {
   display: block;
-  font-weight: bold;
+  font: 700 1.2em/1.2em "Poppins", sans-serif;
 }
 .container_passport ul, .container_passport ol {
-  width: clamp(300px, 50%, 500px);
   text-align: left;
 }
 
