@@ -61,11 +61,11 @@ a {
   font: 300 1em/1em "Poppins", sans-serif;
 }
 .container_passport h4 {
-  font: 700 1.4em/2em "Poppins", sans-serif;
+  font: 700 1.6em/2em "Poppins", sans-serif;
 }
 .container_passport b {
   display: block;
-  font: 700 1.2em/1.2em "Poppins", sans-serif;
+  font: 700 1.2em/1.6em "Poppins", sans-serif;
 }
 .container_passport ul, .container_passport ol {
   text-align: left;
