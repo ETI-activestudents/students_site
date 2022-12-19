@@ -1,0 +1,64 @@
+@use "../common/vars" as *;
+@use "../common/mixins" as *;
+
+.container_passport{
+  box-sizing: border-box;
+  text-align: left;
+  margin: 0 auto;
+  padding: 0 max(30%, 120px) 20px;
+  color: $mainBackgroundColor;
+  background-color: $mainTextColor;
+  font: $mainFont;
+  h4{
+    font: $headerFont;
+  }
+  b{
+    display: block;
+    font: $boldFont;
+  }
+  ul, ol{
+    text-align: left;
+  }
+}
+
+.none_ul > li{
+  list-style: none;
+}
+.normal_ul > li {
+  list-style: disc inside;
+}
+.decimal_ul > li{
+  list-style: decimal inside;
+}
+.second_ul{
+  margin-left: 20px;
+  ol li{
+    margin-left: 20px;
+  }
+}
+
+.container_form{
+  margin: 20px auto;
+  text-align: center;
+  p{
+    font: $mainFont;
+    font-size: 2em;
+  }
+}
+
+.footer{
+  width: 100%;
+  color: $mainBackgroundColor;
+  background-color: $mainTextColor;
+  margin: 0 auto;
+  text-align: center;
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 6px;
+  a > img{
+    width: 32px;
+    height: 32px;
+  }
+}

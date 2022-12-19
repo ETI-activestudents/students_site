@@ -1,9 +1,26 @@
 //=========== colors =================
-$mainTextColor: black;
-$mainBackgroundColor: #DED4D4;
+$mainTextColor: #c8c8c8;
+$mainBackgroundColor: #000;
+$hoverColor: #343434;
 
 //=========== fonts ==================
+@font-face {
+  font-family: 'LC Chalk';
+  src: url('/themes/default/fonts/LCChalk.woff2') format('woff2'),
+  url('/themes/default/fonts/LCChalk.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 $mainFont: 300 1em/1em 'Poppins', sans-serif;
-$headerFont: 700 1.6em/2.0em 'Poppins', sans-serif;
+$headerFont: 700 20px/40px 'Poppins', sans-serif;
 $boldFont: 700 1.2em/1.6em 'Poppins', sans-serif;
 $thickFont: 100 1em/1em 'Poppins', sans-serif;
+
+$chalkFontHeader: normal clamp(25px,5vw,60px)/8vw 'LC Chalk', normal;
+$chalkFontH1: normal 1.1em/1.1em 'LC Chalk', normal;
+$chalkFontMenu: normal 1.2em/1.2em 'LC Chalk', normal;
+$chalkFontFooter: normal 1em/1em 'LC Chalk', normal;
+
+$fontAwesome: 1.2em/1.2em 'Font Awesome 5 Free', normal;
