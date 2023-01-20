@@ -1,3 +1,19 @@
 @import "common/reset";
+@import "common/elements";
+
 @import "pages/passport";
 @import "pages/main";
+@import "pages/404";
+
+@import "parts/navigation";
+@import "parts/footer";
+
+body,html{
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+

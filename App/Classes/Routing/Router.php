@@ -25,7 +25,7 @@ class Router{
                 }
             }
         }
-        throw new Exception('Page not found :(', 404);
+        throw new Exception('Page not found', 404);
     }
 
     public function checkPath(string $path): bool{

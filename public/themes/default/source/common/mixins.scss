@@ -1,30 +1,81 @@
 @use 'sass:math';
+@use '../common/vars' as *;
 
-@mixin block($margin: 0 auto,$padding: 0 ){
-  display: block;
-  margin: $margin;
-  padding: $padding;
+@mixin clip-path-both{
+  clip-path: polygon(0 0,  5% 20px, 15% 0, 27% 17px, 33% 10px, 45% 17px, 51% 2px , 77% 13px, 83% 4px, 93% 18px, 100% 0,
+          100% calc(100% - 20px),
+          93% calc(100% - 20px + 18px),
+          83% calc(100% - 20px + 4px),
+          77% calc(100% - 20px + 13px),
+          51% calc(100% - 20px + 2px),
+          45% calc(100% - 20px + 17px),
+          33% calc(100% - 20px + 10px),
+          27% calc(100% - 20px + 17px),
+          15% calc(100% - 20px),
+          5% calc(100% - 20px + 20px),
+          0 calc(100% - 20px)
+  );
+  -webkit-clip-path: polygon(0 0,  5% 20px, 15% 0, 27% 17px, 33% 10px, 45% 17px, 51% 2px , 77% 13px, 83% 4px, 93% 18px, 100% 0,
+          100% calc(100% - 20px),
+          93% calc(100% - 20px + 18px),
+          83% calc(100% - 20px + 4px),
+          77% calc(100% - 20px + 13px),
+          51% calc(100% - 20px + 2px),
+          45% calc(100% - 20px + 17px),
+          33% calc(100% - 20px + 10px),
+          27% calc(100% - 20px + 17px),
+          15% calc(100% - 20px),
+          5% calc(100% - 20px + 20px),
+          0 calc(100% - 20px)
+  );
 }
 
-@mixin adaptivePadding($value){
-  padding: $value 0;
-  $value2: $value;
-  @for $i from 1 through 10{
-    $value2: round($value2 - math.div($value2 * 1px , 10px));
-    $maxWidth: calc(1399px - #{$i}*100px);
-    @media screen and (max-width: $maxWidth){
-      padding: $value2 0;
-    }
+@mixin clip-path-bottom{
+  clip-path: polygon(0 0, 100% 0,
+          100% calc(100% - 20px),
+          93% calc(100% - 20px + 18px),
+          83% calc(100% - 20px + 4px),
+          77% calc(100% - 20px + 13px),
+          51% calc(100% - 20px + 2px),
+          45% calc(100% - 20px + 17px),
+          33% calc(100% - 20px + 10px),
+          27% calc(100% - 20px + 17px),
+          15% calc(100% - 20px),
+          5% calc(100% - 20px + 20px),
+          0 calc(100% - 20px)
+  );
+  -webkit-clip-path: polygon(0 0, 100% 0,
+          100% calc(100% - 20px),
+          93% calc(100% - 20px + 18px),
+          83% calc(100% - 20px + 4px),
+          77% calc(100% - 20px + 13px),
+          51% calc(100% - 20px + 2px),
+          45% calc(100% - 20px + 17px),
+          33% calc(100% - 20px + 10px),
+          27% calc(100% - 20px + 17px),
+          15% calc(100% - 20px),
+          5% calc(100% - 20px + 20px),
+          0 calc(100% - 20px)
+  );
+}
+
+@mixin clip-path-top{
+  clip-path: polygon(0 0, 5% 20px, 15% 0, 27% 17px, 33% 10px, 45% 17px, 51% 2px , 77% 13px, 83% 4px, 93% 18px, 100% 0, 100% 101%, 0 101%);
+  -webkit-clip-path: polygon(0 0, 5% 20px, 15% 0, 27% 17px, 33% 10px, 45% 17px, 51% 2px , 77% 13px, 83% 4px, 93% 18px, 100% 0, 100% 101%, 0 101%);
+}
+
+@mixin image-2x($image, $image2x) {
+  background-image: url($image);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  filter: grayscale(70%);
+  @media #{$tablets}{
+    background-attachment: scroll;
   }
-}
-
-@mixin image-2x($image) {
-  @media (min--moz-device-pixel-ratio: 1.3),
-  (-o-min-device-pixel-ratio: 2.6/2),
-  (-webkit-min-device-pixel-ratio: 1.3),
-  (min-device-pixel-ratio: 1.3),
-  (min-resolution: 1.3dppx) {
-    background: url($image) no-repeat;
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    background-image: url($image2x) !important;
   }
 }
 
@@ -166,7 +217,7 @@
 }
 
 // translate rotate
-@mixin translate-rotate ($x, $y, $deg) {
+@mixin  translate-rotate ($x, $y, $deg) {
   @include transform(translate($x, $y)rotate(#{$deg}deg));
 }
 
@@ -195,16 +246,16 @@
   font-weight: 900;
 }
 
-@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+@mixin box-shadow($top, $left, $blur, $spread, $color, $inset: false) {
   @if $inset {
-    -webkit-box-shadow: inset $top $left $blur $color;
-    -moz-box-shadow: inset $top $left $blur $color;
-    box-shadow: inset $top $left $blur $color;
+    -webkit-box-shadow: inset $top $left $blur $spread $color;
+    -moz-box-shadow: inset $top $left $blur $spread $color;
+    box-shadow: inset $top $left $blur $spread $color;
   }
   @else {
-    -webkit-box-shadow: $top $left $blur $color;
-    -moz-box-shadow: $top $left $blur $color;
-    box-shadow: $top $left $blur $color;
+    -webkit-box-shadow: $top $left $blur $spread$color;
+    -moz-box-shadow: $top $left $blur $spread $color;
+    box-shadow: $top $left $blur $spread $color;
   }
 }
 

@@ -1,0 +1,14 @@
+@use 'vars' as *;
+@use 'mixins' as *;
+
+
+.btn{
+  display: block;
+  color: $mainBgColor;
+  background-color: $textColor;
+  padding: 12px 12px;
+  @include transition(all 0.3s ease);
+  &:hover{
+    background-color: $mainTextColor;
+  }
+}

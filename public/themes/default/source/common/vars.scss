@@ -1,26 +1,61 @@
 //=========== colors =================
-$mainTextColor: #c8c8c8;
-$mainBackgroundColor: #000;
-$hoverColor: #343434;
+$mainTextColor: #000;
+$mainBgColor: #fff;
+$navColor: #fff;
+$footerBgColor: #000;
+$textColor: #777;
+
+$hoverColor: #ccc;
 
 //=========== fonts ==================
-@font-face {
-  font-family: 'LC Chalk';
-  src: url('/themes/default/fonts/LCChalk.woff2') format('woff2'),
-  url('/themes/default/fonts/LCChalk.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
 
+// passport
 $mainFont: 300 1em/1em 'Poppins', sans-serif;
 $headerFont: 700 20px/40px 'Poppins', sans-serif;
 $boldFont: 700 1.2em/1.6em 'Poppins', sans-serif;
 $thickFont: 100 1em/1em 'Poppins', sans-serif;
 
-$chalkFontHeader: normal clamp(25px,5vw,60px)/8vw 'LC Chalk', normal;
-$chalkFontH1: normal 1.1em/1.1em 'LC Chalk', normal;
-$chalkFontMenu: normal 1.2em/1.2em 'LC Chalk', normal;
-$chalkFontFooter: normal 1em/1em 'LC Chalk', normal;
+// site 'Montserrat', sans-serif; .. lato
+$fontMenu: 300 15px/1.8 "Lato", sans-serif;
+$fontMenuUa: 300 15px/1.8 "Montserrat", sans-serif;
 
-$fontAwesome: 1.2em/1.2em 'Font Awesome 5 Free', normal;
+$fontLogo: 700 24px/1.8 "Lato", sans-serif;
+$fontH1: 400 24px/24px "Montserrat", sans-serif;
+$fontH2: 400 16px/24px "Montserrat", sans-serif;
+$fontText: 400 16px/1.8 "Montserrat", sans-serif;
+$fontBefore: 400 36px/1.8 "Lato", sans-serif;
+
+$fontStatsH3: 400 24px/1.8 "Lato", sans-serif;
+$fontStatsP: 400 16px/1.8 "Lato", sans-serif;
+
+$fontStatsH3Small: 300 18px/1.8 "Lato", sans-serif;
+$fontStatsPSmall: 300 14px/1.8 "Lato", sans-serif;
+
+$fontContactsForm: 300 14px/14px "Lato", sans-serif;
+$fontAuthor: 200 12px/30px "Montserrat", sans-serif;
+$fontNewsShort: 300 14px/20px "Montserrat", sans-serif;
+$fontCopy: 100 12px/12px "Lato", sans-serif;
+
+$fontHidden: 100 0px/0px "Lato", sans-serif;
+$fontSPMenu: 400 28px/28px "Lato", sans-serif;
+$fontSPMenuSmall: 400 20px/20px "Lato", sans-serif;
+
+
+$fontAwesome: normal normal normal 28px/28px 'FontAwesome', normal;
+
+$screen-min: 320px;
+$screen-min-s: 400px;
+$screen-xxs: 565px;
+$screen-xs: 767px;
+$screen-sm: 991px;
+$screen-md: 1199px;
+$screen-lg: 1400px;
+
+// @media #{$tablets}{}
+$phones-mini: 'only screen and (max-width: #{$screen-min-s})';
+$phones: 'only screen and (max-width: #{$screen-min-s})';
+$phones-big: 'only screen and (max-width: #{$screen-xxs})';
+$tablets: 'only screen and (max-width: #{$screen-xs})';
+$tablets-big: 'only screen and (max-width: #{$screen-sm})';
+$desktop: 'only screen and (max-width: #{$screen-md})';
+$full-hd: 'only screen and (max-width: #{$screen-lg})';
