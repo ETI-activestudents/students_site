@@ -52,7 +52,7 @@
             <i class="fa-solid fa-phone"></i>
             <span class="">CONTACTS</span>
         </a>
-        <a class="main_nav_link" href=""><i class="fa-solid fa-right-to-bracket"></i>LOGIN</a>
+        <a class="main_nav_link" href="/login"><i class="fa-solid fa-right-to-bracket"></i>LOGIN</a>
     </nav>
     <header class="main_header" id="section_header">
         <div class="main_header_logo">
@@ -313,7 +313,7 @@
             <a href="https://www.facebook.com/etiactivestudents" target="_blank"><i class="fa fa-facebook-official"></i></a>
             <a href="https://www.tiktok.com/@eti_elvorti" target="_blank"><i class="fa fa-tiktok"></i></a>
             <a href="https://t.me/joinchat/6kTGEFvzUx02NzJi?tpclid=facebook.PAAaZBmGmqmcMfDzdpoev6TbgLrm0mAj9pyhZCY64dfUQ7cW1v41PFsPtx8mI" target="_blank"><i class="fa fa-telegram"></i></a>
-            <a href="https://www.figma.com/files/team/1172443273592127423/Eti-activestudents?fuid=1172858564030581867" target="_blank"></i></a>
+            <a href="https://www.figma.com/files/team/1172443273592127423/Eti-activestudents?fuid=1172858564030581867" target="_blank"><i class="fa fa-figma"></i></a>
             <a href="https://trello.com/b/wgYSNX0b/%D0%BF%D0%BB%D0%B0%D0%BD-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B8" target="_blank"><i class="fa fa-github"></i></a>
         </div>
         <a href="/" class="main_footer_copy"><i class="fa fa-copyright"></i>ETI ActiveStudents 2022-2023</a>
