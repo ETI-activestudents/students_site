@@ -56,7 +56,7 @@
     </nav>
     <header class="main_header" id="section_header">
         <div class="main_header_logo">
-            <a class="main_header_logo_link" id="logo_counter" onclick="window.location.reload()">ACTIVE&nbsp;STUDENTS</a>
+            <a class="main_header_logo_link" onclick="window.location.reload()">ACTIVE&nbsp;STUDENTS</a>
         </div>
     </header>
     <div class="main_content">
@@ -66,6 +66,7 @@
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, accusantium adipisci architecto assumenda deleniti eligendi eveniet exercitationem id, impedit ipsam mollitia quaerat quidem recusandae, repellendus temporibus! Ab adipisci aperiam architecto atque aut blanditiis commodi corporis, dignissimos dolore ducimus eius eligendi est eveniet expedita explicabo fuga ipsam iusto laboriosam laudantium molestias nesciunt nisi nobis obcaecati officia pariatur praesentium quam quas quia quis quod quos ratione recusandae reprehenderit sit tempora temporibus velit? Ab ad distinctio esse ipsam molestiae, natus nemo suscipit voluptatibus. Alias, animi architecto atque consectetur doloremque eaque enim, eveniet ipsam ipsum modi nemo perferendis porro quasi rem tempore temporibus tenetur.
             </p>
+            <a class="long_btn" href="/about">About us</a>
             <div class="section_about_nav">
                 <div class="section_about_nav_block">
                     <h2>Гостям</h2>
@@ -134,55 +135,56 @@
         </section>
         <section id="section_news" class="section_news">
             <div class="section_news_image"></div>
+            <a class="long_btn" href="/news">View all</a>
             <div class="section_news_grid">
-                <div class="section_news_grid_item">
+                <div class="section_news_grid_item" >
                     <h2>Heading #1</h2>
                     <img src="/files/img/news_previews/news_1.jpg" alt="#1">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor et facilis illum modi, reprehenderit sequi!</p>
                     <em>01/01/2023 Author Name</em>
-                    <em class="read_more"><a href="#">Read more...</a></em>
+                    <em class="read_more"><a href="/news/1">Read more...</a></em>
                 </div>
                 <div class="section_news_grid_item">
                     <h2>Heading #2</h2>
                     <img src="/files/img/news_previews/news_2.jpg" alt="#2">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor et facilis illum modi, reprehenderit sequi!</p>
                     <em>01/01/2023 Author Name</em>
-                    <em class="read_more"><a href="#">Read more...</a></em>
+                    <em class="read_more"><a  href="/news/2">Read more...</a></em>
                 </div>
                 <div class="section_news_grid_item">
                     <h2>Heading #3</h2>
                     <img src="/files/img/news_previews/news_3.jpg" alt="#3">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor et facilis illum modi, reprehenderit sequi!</p>
                     <em>01/01/2023 Author Name</em>
-                    <em class="read_more"><a href="#">Read more...</a></em>
+                    <em class="read_more"><a  href="/news/3">Read more...</a></em>
                 </div>
                 <div class="section_news_grid_item">
                     <h2>Heading #4</h2>
                     <img src="/files/img/news_previews/news_4.jpg" alt="#4">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor et facilis illum modi, reprehenderit sequi!</p>
                     <em>01/01/2023 Author Name</em>
-                    <em class="read_more"><a href="#">Read more...</a></em>
+                    <em class="read_more"><a  href="/news/4">Read more...</a></em>
                 </div>
                 <div class="section_news_grid_item">
                     <h2>Heading #5</h2>
                     <img src="/files/img/news_previews/news_5.jpg" alt="#5">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor et facilis illum modi, reprehenderit sequi!</p>
                     <em>01/01/2023 Author Name</em>
-                    <em class="read_more"><a href="#">Read more...</a></em>
+                    <em class="read_more"><a href="/news/5">Read more...</a></em>
                 </div>
                 <div class="section_news_grid_item">
                     <h2>Heading #6</h2>
                     <img src="/files/img/news_previews/news_6.jpg" alt="#6">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor et facilis illum modi, reprehenderit sequi!</p>
                     <em>01/01/2023 Author Name</em>
-                    <em class="read_more"><a href="#">Read more...</a></em>
+                    <em class="read_more"><a href="/news/6">Read more...</a></em>
                 </div>
                 <div class="section_news_grid_item">
                     <h2>Heading #7</h2>
                     <img src="/files/img/news_previews/news_7.jpg" alt="#7">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor et facilis illum modi, reprehenderit sequi!</p>
                     <em>01/01/2023 Author Name</em>
-                    <em class="read_more"><a href="#">Read more...</a></em>
+                    <em class="read_more"><a href="/news/7">Read more...</a></em>
                 </div>
                 <div class="section_news_grid_item">
                     <a class="add_new" href=""><i class="fa-solid fa-plus"></i>&nbsp;Додати новину</a>
@@ -193,8 +195,19 @@
             <h1>STUDENTS PARLIAMENT</h1>
             <h2>Діяльність студентського парламенту</h2>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet delectus dolor dolorem natus qui rem voluptatibus. Ab alias beatae cupiditate deserunt eos facere hic id in inventore iste minima nisi nostrum, porro provident recusandae ut veritatis. Architecto culpa cumque dolor dolore doloribus enim est et facere, facilis illo labore magnam modi odit, provident, quidem sunt voluptatum? Ad alias aperiam aspernatur commodi corporis dolores explicabo illum ipsam, iusto laboriosam nemo nisi quae tempore veniam voluptatibus! Blanditiis dignissimos eveniet iusto magni, possimus tempora totam vel. Ab aliquid aspernatur, aut cupiditate debitis deleniti dolores ducimus eaque illo, inventore, labore nobis non nostrum sint!
-            </p>
+                <b>Студентський Парламент</b> – колектив творчих, ініціативних і небайдужих молодих людей. Їх об’єднує одна велика ідея – залишити свій слід в історії інституту та реалізація цікавих студентських проектів.
+                <br>
+                <br>
+                <b>Що робить Студпарламент:</b> <br>
+                &blacksquare;&nbsp;захищає права і законні інтереси студентів; <br>
+                &blacksquare;&nbsp;доносить позицію студентства до керівництва інституту; <br>
+                &blacksquare;&nbsp;сприяє участі студентів у громадському житті, навчальній та науково-дослідній роботі; <br>
+                &blacksquare;&nbsp;проводить студентські акції, заходи та програми; <br>
+                <br>
+                Найцікавішою діяльністю парламента є організація різних заходів. І звісно вже виникли свої традиції та свята, які щорічно святкуються у стінах нашого навчального закладу. Одними із таких є Хелловін, де костюмована вечірка та неймовірні фотозони не залишить байдужими нікого. Також є щотижневі тематичні заходи - вечори кіно та гри "Мафія".
+                <br>
+                Ми організовуємо дозвілля студентів нашого  інституту, аби хоч іноді нагадувати їм, що життя будь-якого студента не обмежується лише підготовкою до занять.            </p>
+            <a class="long_btn" href="/sp">Go to SP section</a>
             <div class="section_sp_panel">
                 <div class="section_sp_panel_menu">
                     <a id="sp_menu_1" class="section_sp_panel_menu_item menu_active" onclick="switchBlock(this)">
@@ -284,42 +297,36 @@
             </div>
         </section>
     </div>
-    <footer class="main_footer">
-        <button class="main_footer_button" onclick="document.querySelector('#section_header').scrollIntoView()"><i class="fa fa-arrow-up"></i> To the top</button>
-        <div class="main_footer_credits">
-            <div class="main_footer_credits_helpers">
-                <h2>За підтримки:</h2>
-                <a href="">CompanyName1</a>
-                <a href="">CompanyName2</a>
-                <a href="">CompanyName3</a>
-            </div>
-            <div class="main_footer_credits_devs">
-                <h2>Розробники:</h2>
-                <a href="">Student Name1</a>
-                <a href="">Student CompanyName1</a>
-                <a href="">Student CompanyName2</a>
-                <a href="">Student CompanyName3</a>
-                <a href="">Student CompanyName4</a>
-                <a href="">Student CompanyName5</a>
-                <a href="">Student CompanyName6</a>
-                <a href="">Student CompanyName7</a>
-                <a href="">Student CompanyName8</a>
-                <a href="">Student CompanyName9</a>
-                <a href="">Student CompanyName10</a>
-            </div>
-        </div>
-        <div class="main_footer_media">
-            <a href="https://www.instagram.com/etielvorti" target="_blank"><i class="fa fa-instagram"></i></a>
-            <a href="https://www.facebook.com/etiactivestudents" target="_blank"><i class="fa fa-facebook-official"></i></a>
-            <a href="https://www.tiktok.com/@eti_elvorti" target="_blank"><i class="fa fa-tiktok"></i></a>
-            <a href="https://t.me/joinchat/6kTGEFvzUx02NzJi?tpclid=facebook.PAAaZBmGmqmcMfDzdpoev6TbgLrm0mAj9pyhZCY64dfUQ7cW1v41PFsPtx8mI" target="_blank"><i class="fa fa-telegram"></i></a>
-            <a href="https://www.figma.com/files/team/1172443273592127423/Eti-activestudents?fuid=1172858564030581867" target="_blank"><i class="fa fa-figma"></i></a>
-            <a href="https://trello.com/b/wgYSNX0b/%D0%BF%D0%BB%D0%B0%D0%BD-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B8" target="_blank"><i class="fa fa-trello"></i></a>
-            <a href="https://github.com/ETI-activestudents/students_site" target="_blank"><i class="fa fa-github"></i></a>
-        </div>
-        <a href="/" class="main_footer_copy"><i class="fa fa-copyright"></i>ETI ActiveStudents 2022-2023</a>
-    </footer>
+    <?php include_once '../public/pages/parts/footer.php'; ?>
+    <script src="/js/holidays.js" type="text/javascript"></script>
     <script>
+        onmousemove = (event) =>{
+            let width = window.innerWidth;
+            let height = window.innerHeight;
+            let X = event.clientX;
+            let Y = event.clientY;
+            let side = '';
+            let position = '';
+            let element = document.getElementById('section_header');
+
+            if(X > width / 2) {
+                side = 'right';
+            }
+            if(X < width / 2) {
+                side = 'left';
+            }
+            if(Y > height / 2) {
+                position = 'bottom';
+            }
+            if(Y < height / 2) {
+                position = 'top';
+            }
+            element.style.backgroundPositionX = side;
+            element.style.backgroundPositionY = position;
+            element.style.transitionDelay = '0.5s';
+            element.style.transition = 'background-position 50s';
+            element.style.transitionTimingFunction = 'linear';
+        }
         switchBlock = (el) => {
             document.querySelectorAll('[id^="sp_menu_"]').forEach((block) => {
                 el === block ? document.getElementById(`item_${el.id}`).classList.add('active_item') : document.getElementById(`item_${block.id}`).classList.remove('active_item');

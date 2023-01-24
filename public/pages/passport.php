@@ -155,40 +155,7 @@
     <a class="btn" href="https://docs.google.com/document/d/1Jc_1FRgHbGmGTskfrMBcsZR5axFNoWnP/edit?usp=sharing&ouid=112739024591007289154&rtpof=true&sd=true" target="_blank">Паспорт проекту</a>
 </div>
 
-<footer class="main_footer">
-    <button class="main_footer_button" onclick="document.querySelector('#section_header').scrollIntoView()"><i class="fa fa-arrow-up"></i> To the top</button>
-    <div class="main_footer_credits">
-        <div class="main_footer_credits_helpers">
-            <h2>За підтримки:</h2>
-            <a href="">CompanyName1</a>
-            <a href="">CompanyName2</a>
-            <a href="">CompanyName3</a>
-        </div>
-        <div class="main_footer_credits_devs">
-            <h2>Розробники:</h2>
-            <a href="">Student Name1</a>
-            <a href="">Student CompanyName1</a>
-            <a href="">Student CompanyName2</a>
-            <a href="">Student CompanyName3</a>
-            <a href="">Student CompanyName4</a>
-            <a href="">Student CompanyName5</a>
-            <a href="">Student CompanyName6</a>
-            <a href="">Student CompanyName7</a>
-            <a href="">Student CompanyName8</a>
-            <a href="">Student CompanyName9</a>
-            <a href="">Student CompanyName10</a>
-        </div>
-    </div>
-    <div class="main_footer_media">
-        <a href="https://www.instagram.com/etielvorti" target="_blank"><i class="fa fa-instagram"></i></a>
-        <a href="https://www.facebook.com/etiactivestudents" target="_blank"><i class="fa fa-facebook-official"></i></a>
-        <a href="https://www.tiktok.com/@eti_elvorti" target="_blank"><i class="fa fa-tiktok"></i></a>
-        <a href="https://t.me/joinchat/6kTGEFvzUx02NzJi?tpclid=facebook.PAAaZBmGmqmcMfDzdpoev6TbgLrm0mAj9pyhZCY64dfUQ7cW1v41PFsPtx8mI" target="_blank"><i class="fa fa-telegram"></i></a>
-        <a href="https://www.figma.com/files/team/1172443273592127423/Eti-activestudents?fuid=1172858564030581867" target="_blank"><i class="fa fa-figma"></i></a>
-        <a href="https://trello.com/b/wgYSNX0b/%D0%BF%D0%BB%D0%B0%D0%BD-%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B8" target="_blank"><i class="fa fa-trello"></i></a>
-        <a href="https://github.com/ETI-activestudents/students_site" target="_blank"><i class="fa fa-github"></i></a>
-    </div>
-    <a href="/" class="main_footer_copy"><i class="fa fa-copyright"></i>ETI ActiveStudents 2022-2023</a>
-</footer>
+<?php include_once '../public/pages/parts/footer.php'; ?>
+
 </body>
 </html>

@@ -1,12 +1,13 @@
 <?php
 /**
- * @var string $message
- * @var string $code
+ * @var int $id
  */
+use App\Classes\Controllers\NewsController;
 ?>
-
+<!doctype html>
+<html lang="en">
 <head>
-    <title>ETI <?=$code?></title>
+    <title>ETI News #<?=$id?></title>
     <meta charset="UTF-8">
     <link rel="icon" href="/files/img/ico/eti_ico_48.svg" type="image/x-icon">
     <meta name="viewport"
@@ -23,19 +24,24 @@
 </head>
 
 <body>
-    <nav class="main_nav">
+<header class="main_header" id="section_header">
+    <div class="main_header_logo">
+        <a class="main_header_logo_link" id="logo_counter" onclick="window.location.reload()">Heading #1</a>
+    </div>
+</header>
+<nav class="main_nav">
     <input id="_1" type="checkbox">
     <label id="menuIcon" class="collapse" for="_1" onclick="this.parentElement.classList.toggle('open')">
         <svg class="ham hamRotate" viewBox="0 0 100 100"  width="36" height="36">
             <path
-                    class="line top"
-                    d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+                class="line top"
+                d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
             <path
-                    class="line middle"
-                    d="m 30,50 h 40" />
+                class="line middle"
+                d="m 30,50 h 40" />
             <path
-                    class="line bottom"
-                    d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+                class="line bottom"
+                d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
         </svg>
     </label>
     <a id="nav_section_header" onclick="document.getElementById('_1').checked = false;this.parentElement.classList.toggle('open')" class="main_nav_link underline" href="/">
@@ -60,9 +66,17 @@
     </a>
     <a class="main_nav_link" href="/login"><i class="fa-solid fa-right-to-bracket"></i>LOGIN</a>
 </nav>
-    <div class="not_found_content">
-        <h1><?=$message?></h1>
-        <a href="/"><i class="fa-solid fa-rotate-left"></i>Go to home page</a>
+
+<div class="news_content">
+    <div>
+        <img class="news_content_single_image" src="/files/img/news_previews/news_1.jpg" alt="#1">
     </div>
-    <?php include_once '../public/pages/parts/footer.php'; ?>
-</body>
+    <div class="news_content_single_article">
+        <p class="article">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor et facilis illum modi, reprehenderit sequi!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid blanditiis debitis doloribus esse et, facere id nisi odit, pariatur recusandae rerum saepe sequi ullam velit vero voluptatum? Accusamus alias aspernatur assumenda commodi dolorem eaque earum eligendi eum itaque laboriosam laborum magni nulla, placeat sint suscipit! Adipisci dolores doloribus placeat?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem distinctio labore nostrum officia perferendis provident quaerat saepe tenetur. Alias dolorum eveniet quas tempore voluptatibus! Ipsa laudantium qui unde vel. Delectus, modi velit. Alias autem consectetur consequuntur culpa cupiditate deleniti, doloribus eos error eum facilis hic ipsam laudantium nostrum pariatur porro quos ratione reiciendis repellendus reprehenderit repudiandae soluta vel veniam vero.</p>
+    </div>
+    <em class="news_content_single_author">01/01/2023 Author Name</em>
+ </div>
+
+<?php include_once '../public/pages/parts/footer.php'; ?>
