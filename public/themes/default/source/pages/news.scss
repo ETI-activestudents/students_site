@@ -3,9 +3,10 @@
 
 .news_content{
   @extend .main_content;
-  div:has(>img){  // this is the selector that is not working
+  div:has(>img){  // проверка на наличие внутри div картинки, работает не во всех браузерах
     //background-color: palegoldenrod;
   }
+
   &_single_image{
     display: block;
     margin: 20px auto;

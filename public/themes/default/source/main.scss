@@ -5,8 +5,13 @@
 @import "pages/main";
 @import "pages/404";
 @import "pages/news";
+@import "pages/login";
+@import "pages/about";
 @import "parts/navigation";
 @import "parts/footer";
+
+@import "slick/slick";
+@import "slick/slick-theme";
 
 body,html{
   padding: 0;

@@ -2,16 +2,12 @@
 @use "../common/mixins" as *;
 
 .passport_content{
-  flex: 1 0 auto;
-  z-index: 10;
+  @extend .main_content;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 auto -40px auto;
-  padding: 40px max(30%, 120px) 40px;
   color: $mainTextColor;
-  background-color: $mainBgColor;
   font: $mainFont;
   @include clip-path-bottom;
   h4{

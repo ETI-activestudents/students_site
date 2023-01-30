@@ -36,17 +36,6 @@
     z-index: -1;
     @include clip-path-bottom;
   }
-  &:after{
-    content: '';
-    position: absolute;
-    top: 61px;
-    left: 0;
-    width: 100%;
-    height: 22px;
-    background-color: transparentize(lighten($mainTextColor,50%),.25);
-    z-index: 1;
-    @include clip-path-both;
-  }
   &_link{
     padding: 18px 16px;
     display: inline-flex;

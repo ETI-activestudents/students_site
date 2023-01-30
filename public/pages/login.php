@@ -1,13 +1,7 @@
-<?php
-/**
- * @var int $id
- */
-use App\Classes\Controllers\NewsController;
-?>
 <!doctype html>
 <html lang="en">
 <head>
-    <title>ETI News #<?=$id?></title>
+    <title>ETI Login</title>
     <meta charset="UTF-8">
     <link rel="icon" href="/files/img/ico/eti_ico_48.svg" type="image/x-icon">
     <meta name="viewport"
@@ -22,7 +16,6 @@ use App\Classes\Controllers\NewsController;
     ?>
     <script src='/js/fontawesome.js'></script>
 </head>
-
 <body>
     <nav class="main_nav">
         <input id="_1" type="checkbox">
@@ -61,17 +54,42 @@ use App\Classes\Controllers\NewsController;
         </a>
         <a class="main_nav_link" href="/login"><i class="fa-solid fa-right-to-bracket"></i>LOGIN</a>
     </nav>
-    <div class="news_content">
-        <h1 class="content_heading">Heading #1</h1>
-        <div>
-            <img class="news_content_single_image" src="/files/img/news_previews/news_1.jpg" alt="#1">
-        </div>
-        <div class="news_content_single_article">
-            <p class="article">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor et facilis illum modi, reprehenderit sequi!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid blanditiis debitis doloribus esse et, facere id nisi odit, pariatur recusandae rerum saepe sequi ullam velit vero voluptatum? Accusamus alias aspernatur assumenda commodi dolorem eaque earum eligendi eum itaque laboriosam laborum magni nulla, placeat sint suscipit! Adipisci dolores doloribus placeat?</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem distinctio labore nostrum officia perferendis provident quaerat saepe tenetur. Alias dolorum eveniet quas tempore voluptatibus! Ipsa laudantium qui unde vel. Delectus, modi velit. Alias autem consectetur consequuntur culpa cupiditate deleniti, doloribus eos error eum facilis hic ipsam laudantium nostrum pariatur porro quos ratione reiciendis repellendus reprehenderit repudiandae soluta vel veniam vero.</p>
-        </div>
-        <em class="news_content_single_author">01/01/2023 Author Name</em>
-     </div>
+    <div class="login_content">
+            <h1 class="content_heading" id="login_h1">Login</h1>
+            <form class="login_content_form" action="" method="post" id="form_login">
+                <label for="login">Login</label>
+                <input type="text" name="login" id="login" placeholder="Login">
+
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Password">
+
+                <button type="submit" class="btn long_btn300">Sign in</button>
+
+            </form>
+            <form class="login_content_form hide" action="" method="post" id="form_reg">
+                <label for="login_reg">Login</label>
+                <input type="text" name="login_reg" id="login_reg" placeholder="Login">
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Email">
+
+                <label for="password_reg">Password</label>
+                <input type="password" name="password_reg" id="password_reg" placeholder="Password">
+
+                <label for="password_reg_c">Confirm password</label>
+                <input type="password" name="password_reg_c" id="password_reg_c" placeholder="Password">
+
+                <button type="submit" class="btn long_btn300">Sign up</button>
+            </form>
+            <i class="fa-solid fa-circle-question"></i>&nbsp<a type="submit" onclick="toggleClass();" id="login_btn">Don't have an account yet?</a>
+    </div>
     <?php include_once '../public/pages/parts/footer.php'; ?>
+    <script>
+        toggleClass = () => {
+            document.getElementById('form_login').classList.toggle('hide');
+            document.getElementById('form_reg').classList.toggle('hide');
+            document.getElementById('login_btn').innerHTML = document.getElementById('login_btn').innerHTML.includes('yet') ? "Already have an account?" : "Don't have an account yet?";
+            document.getElementById('login_h1').innerHTML = document.getElementById('login_h1').innerHTML === 'Login' ? 'Registration' : 'Login';
+        }
+    </script>
 </body>

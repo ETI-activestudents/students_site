@@ -1,13 +1,7 @@
-<?php
-/**
- * @var int $id
- */
-use App\Classes\Controllers\NewsController;
-?>
 <!doctype html>
 <html lang="en">
 <head>
-    <title>ETI News #<?=$id?></title>
+    <title>ETI About us</title>
     <meta charset="UTF-8">
     <link rel="icon" href="/files/img/ico/eti_ico_48.svg" type="image/x-icon">
     <meta name="viewport"
@@ -22,7 +16,6 @@ use App\Classes\Controllers\NewsController;
     ?>
     <script src='/js/fontawesome.js'></script>
 </head>
-
 <body>
     <nav class="main_nav">
         <input id="_1" type="checkbox">
@@ -61,17 +54,8 @@ use App\Classes\Controllers\NewsController;
         </a>
         <a class="main_nav_link" href="/login"><i class="fa-solid fa-right-to-bracket"></i>LOGIN</a>
     </nav>
-    <div class="news_content">
-        <h1 class="content_heading">Heading #1</h1>
-        <div>
-            <img class="news_content_single_image" src="/files/img/news_previews/news_1.jpg" alt="#1">
-        </div>
-        <div class="news_content_single_article">
-            <p class="article">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor et facilis illum modi, reprehenderit sequi!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid blanditiis debitis doloribus esse et, facere id nisi odit, pariatur recusandae rerum saepe sequi ullam velit vero voluptatum? Accusamus alias aspernatur assumenda commodi dolorem eaque earum eligendi eum itaque laboriosam laborum magni nulla, placeat sint suscipit! Adipisci dolores doloribus placeat?</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem distinctio labore nostrum officia perferendis provident quaerat saepe tenetur. Alias dolorum eveniet quas tempore voluptatibus! Ipsa laudantium qui unde vel. Delectus, modi velit. Alias autem consectetur consequuntur culpa cupiditate deleniti, doloribus eos error eum facilis hic ipsam laudantium nostrum pariatur porro quos ratione reiciendis repellendus reprehenderit repudiandae soluta vel veniam vero.</p>
-        </div>
-        <em class="news_content_single_author">01/01/2023 Author Name</em>
-     </div>
+    <div class="about_content">
+        123
+    </div>
     <?php include_once '../public/pages/parts/footer.php'; ?>
 </body>

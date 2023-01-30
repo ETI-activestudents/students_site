@@ -8,6 +8,7 @@
   background-color: $textColor;
   padding: 12px 12px;
   text-align: center;
+  font: $fontBtn;
   @include transition(all 0.3s ease);
   @include box-sizing(border-box);
   &:hover{
@@ -18,6 +19,12 @@
 .long_btn {
   @extend .btn;
   width: 80%;
+  margin: 30px auto 0 auto;
+}
+
+.long_btn300 {
+  @extend .btn;
+  width: 300px;
   margin: 30px auto 0 auto;
 }
 
@@ -39,4 +46,22 @@
     background-color: $mainTextColor;
     @include clip-path-mini-hover;
   }
+}
+
+.input{
+  min-width: 100px;
+  padding: 12px 12px;
+  outline: none;
+  border: 1px solid transparentize(lighten($mainTextColor,25%), 0.5);
+  @include transition(border 0.3s ease);
+  @include box-sizing(border-box);
+  &:focus{
+    border: 1px solid $mainTextColor;
+  }
+}
+
+.content_heading{
+  font: $fontH1;
+  text-align: center;
+  margin: 40px 0 0 0;
 }

@@ -2,15 +2,11 @@
 @use '../common/mixins' as *;
 
 .not_found_content{
-  flex: 1 0 auto;
-  height: 100vh;
-  z-index: 10;
+  @extend .main_content;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 20px;
-  margin-bottom: -40px;
   @include image-2x('/themes/default/images/bg_404.jpg',' /themes/default/images/bg_404_2x.jpg');
   @include clip-path-bottom;
   > h1{

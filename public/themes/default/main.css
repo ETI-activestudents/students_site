@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -80,12 +81,13 @@ button {
   display: none; /* Safari and Chrome */
 }
 
-.btn, .not_found_content > a, .section_contacts_grid_form form > button, .long_btn {
+.btn, .not_found_content > a, .section_contacts_grid_form form > button, .long_btn300, .long_btn {
   display: block;
   color: #fff;
   background-color: #777;
   padding: 12px 12px;
   text-align: center;
+  font: 400 14px/14px "Montserrat", sans-serif;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -93,12 +95,17 @@ button {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
-.btn:hover, .not_found_content > a:hover, .section_contacts_grid_form form > button:hover, .long_btn:hover {
+.btn:hover, .not_found_content > a:hover, .section_contacts_grid_form form > button:hover, .long_btn300:hover, .long_btn:hover {
   background-color: #000;
 }
 
 .long_btn {
   width: 80%;
+  margin: 30px auto 0 auto;
+}
+
+.long_btn300 {
+  width: 300px;
   margin: 30px auto 0 auto;
 }
 
@@ -130,20 +137,37 @@ button {
   -webkit-clip-path: polygon(30% 2px, 70% 1px, 90% 0, 100% 2px, calc(100% - 2px) 30%, calc(100% - 1px) 50%, calc(100% - 2px) 70%, calc(100% - 3px) 85%, calc(100% - 1px) 100%, 70% calc(100% - 2px), 30% calc(100% - 1px), 10% calc(100% - 0px), 0 calc(100% - 2px), 2px 70%, 1px 50%, 1px 30%, 2px 15%, 1px 0);
 }
 
+.input, .login_content_form input, .section_contacts_grid_form form #form_message, .section_contacts_grid_form form #form_name, .section_contacts_grid_form form #form_email {
+  min-width: 100px;
+  padding: 12px 12px;
+  outline: none;
+  border: 1px solid rgba(64, 64, 64, 0.5);
+  -webkit-transition: border 0.3s ease;
+  -moz-transition: border 0.3s ease;
+  transition: border 0.3s ease;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.input:focus, .login_content_form input:focus, .section_contacts_grid_form form #form_message:focus, .section_contacts_grid_form form #form_name:focus, .section_contacts_grid_form form #form_email:focus {
+  border: 1px solid #000;
+}
+
+.content_heading {
+  font: 400 24px/24px "Montserrat", sans-serif;
+  text-align: center;
+  margin: 40px 0 0 0;
+}
+
 .passport_content {
-  flex: 1 0 auto;
-  z-index: 10;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 auto -40px auto;
-  padding: 40px max(30%, 120px) 40px;
   color: #000;
-  background-color: #fff;
   font: 300 1em/1em "Poppins", sans-serif;
-  clip-path: polygon(-1px -1px, calc(100% + 1px) -1px, calc(100% + 1px) calc(100% - 21px), 93% calc(100% - 2px), 83% calc(100% - 16px), 77% calc(100% - 7px), 51% calc(100% - 18px), 45% calc(100% - 3px), 33% calc(100% - 10px), 27% calc(100% - 3px), 15% calc(100% - 20px), 5% 100%, -1px calc(100% - 21px));
-  -webkit-clip-path: polygon(-1px -1px, calc(100% + 1px) -1px, calc(100% + 1px) calc(100% - 21px), 93% calc(100% - 2px), 83% calc(100% - 16px), 77% calc(100% - 7px), 51% calc(100% - 18px), 45% calc(100% - 3px), 33% calc(100% - 10px), 27% calc(100% - 3px), 15% calc(100% - 20px), 5% 100%, -1px calc(100% - 21px));
+  clip-path: polygon(-1px 0, calc(100% + 1px) 0, calc(100% + 1px) calc(100% - 20px), 93% calc(100% - 2px), 83% calc(100% - 16px), 77% calc(100% - 7px), 51% calc(100% - 18px), 45% calc(100% - 3px), 33% calc(100% - 10px), 27% calc(100% - 3px), 15% calc(100% - 20px), 5% 100%, -1px calc(100% - 20px));
+  -webkit-clip-path: polygon(-1px 0, calc(100% + 1px) 0, calc(100% + 1px) calc(100% - 20px), 93% calc(100% - 2px), 83% calc(100% - 16px), 77% calc(100% - 7px), 51% calc(100% - 18px), 45% calc(100% - 3px), 33% calc(100% - 10px), 27% calc(100% - 3px), 15% calc(100% - 20px), 5% 100%, -1px calc(100% - 20px));
 }
 .passport_content h4 {
   font: 700 20px/40px "Poppins", sans-serif;
@@ -187,8 +211,8 @@ button {
   background-size: cover;
   filter: grayscale(70%);
   position: relative;
-  clip-path: polygon(-1px -1px, calc(100% + 1px) -1px, calc(100% + 1px) calc(100% - 21px), 93% calc(100% - 2px), 83% calc(100% - 16px), 77% calc(100% - 7px), 51% calc(100% - 18px), 45% calc(100% - 3px), 33% calc(100% - 10px), 27% calc(100% - 3px), 15% calc(100% - 20px), 5% 100%, -1px calc(100% - 21px));
-  -webkit-clip-path: polygon(-1px -1px, calc(100% + 1px) -1px, calc(100% + 1px) calc(100% - 21px), 93% calc(100% - 2px), 83% calc(100% - 16px), 77% calc(100% - 7px), 51% calc(100% - 18px), 45% calc(100% - 3px), 33% calc(100% - 10px), 27% calc(100% - 3px), 15% calc(100% - 20px), 5% 100%, -1px calc(100% - 21px));
+  clip-path: polygon(-1px 0, calc(100% + 1px) 0, calc(100% + 1px) calc(100% - 20px), 93% calc(100% - 2px), 83% calc(100% - 16px), 77% calc(100% - 7px), 51% calc(100% - 18px), 45% calc(100% - 3px), 33% calc(100% - 10px), 27% calc(100% - 3px), 15% calc(100% - 20px), 5% 100%, -1px calc(100% - 20px));
+  -webkit-clip-path: polygon(-1px 0, calc(100% + 1px) 0, calc(100% + 1px) calc(100% - 20px), 93% calc(100% - 2px), 83% calc(100% - 16px), 77% calc(100% - 7px), 51% calc(100% - 18px), 45% calc(100% - 3px), 33% calc(100% - 10px), 27% calc(100% - 3px), 15% calc(100% - 20px), 5% 100%, -1px calc(100% - 20px));
 }
 @media only screen and (max-width: 767px) {
   .main_header {
@@ -265,14 +289,18 @@ button {
   }
 }
 
-.main_content, .news_content {
+.main_content, .about_content, .login_content, .news_content, .not_found_content, .passport_content {
   flex: 1 0 auto;
+  margin: -20px auto;
+  padding: 80px 0;
   z-index: 10;
+  width: 100%;
+  min-height: 100vh;
   background-color: #fff;
-  clip-path: polygon(-1px -1px, 5% 20px, 15% 0, 27% 17px, 33% 10px, 45% 17px, 51% 2px, 77% 13px, 83% 4px, 93% 18px, calc(100% + 1px) -1px, calc(100% + 1px) calc(100% - 21px), 93% calc(100% - 2px), 83% calc(100% - 16px), 77% calc(100% - 7px), 51% calc(100% - 18px), 45% calc(100% - 3px), 33% calc(100% - 10px), 27% calc(100% - 3px), 15% calc(100% - 20px), 5% 100%, -1px calc(100% - 21px));
-  -webkit-clip-path: polygon(-1px -1px, 5% 20px, 15% 0, 27% 17px, 33% 10px, 45% 17px, 51% 2px, 77% 13px, 83% 4px, 93% 18px, calc(100% + 1px) -1px, calc(100% + 1px) calc(100% - 21px), 93% calc(100% - 2px), 83% calc(100% - 16px), 77% calc(100% - 7px), 51% calc(100% - 18px), 45% calc(100% - 3px), 33% calc(100% - 10px), 27% calc(100% - 3px), 15% calc(100% - 20px), 5% calc(100% + 1px), -1px calc(100% - 21px));
+  clip-path: polygon(-1px 0, 5% 20px, 15% 0, 27% 17px, 33% 10px, 45% 17px, 51% 2px, 77% 13px, 83% 4px, 93% 18px, calc(100% + 1px) 0, calc(100% + 1px) calc(100% - 20px), 93% calc(100% - 2px), 83% calc(100% - 16px), 77% calc(100% - 7px), 51% calc(100% - 18px), 45% calc(100% - 3px), 33% calc(100% - 10px), 27% calc(100% - 3px), 15% calc(100% - 20px), 5% 100%, -1px calc(101% - 20px));
+  -webkit-clip-path: polygon(-1px 0, 5% 20px, 15% 0, 27% 17px, 33% 10px, 45% 17px, 51% 2px, 77% 13px, 83% 4px, 93% 18px, calc(100% + 1px) 0, calc(100% + 1px) calc(100% - 20px), 93% calc(100% - 2px), 83% calc(100% - 16px), 77% calc(100% - 7px), 51% calc(100% - 18px), 45% calc(100% - 3px), 33% calc(100% - 10px), 27% calc(100% - 3px), 15% calc(100% - 20px), 5% 100%, -1px calc(101% - 20px));
 }
-.main_content > section, .news_content > section {
+.main_content > section, .about_content > section, .login_content > section, .news_content > section, .not_found_content > section, .passport_content > section {
   min-height: 100vh;
   width: 100%;
   margin: 0 auto;
@@ -280,20 +308,20 @@ button {
   display: flex;
   flex-direction: column;
 }
-.main_content > section > h1, .news_content > section > h1 {
+.main_content > section > h1, .about_content > section > h1, .login_content > section > h1, .news_content > section > h1, .not_found_content > section > h1, .passport_content > section > h1 {
   padding: 84px 0 10px 0;
   font: 400 24px/24px "Montserrat", sans-serif;
   text-align: center;
   color: #777;
 }
-.main_content > section > h2, .news_content > section > h2 {
+.main_content > section > h2, .about_content > section > h2, .login_content > section > h2, .news_content > section > h2, .not_found_content > section > h2, .passport_content > section > h2 {
   font: 400 16px/24px "Montserrat", sans-serif;
   font-style: italic;
   color: #777;
   text-align: center;
   padding: 15px 0;
 }
-.main_content > section > p, .news_content > section > p {
+.main_content > section > p, .about_content > section > p, .login_content > section > p, .news_content > section > p, .not_found_content > section > p, .passport_content > section > p {
   width: 80%;
   font: 400 16px/1.8 "Montserrat", sans-serif;
   text-align: justify;
@@ -452,8 +480,8 @@ button {
   background-size: cover;
   filter: grayscale(70%);
   position: relative;
-  clip-path: polygon(-1px -1px, calc(100% + 1px) -1px, calc(100% + 1px) calc(100% - 21px), 93% calc(100% - 2px), 83% calc(100% - 16px), 77% calc(100% - 7px), 51% calc(100% - 18px), 45% calc(100% - 3px), 33% calc(100% - 10px), 27% calc(100% - 3px), 15% calc(100% - 20px), 5% 100%, -1px calc(100% - 21px));
-  -webkit-clip-path: polygon(-1px -1px, calc(100% + 1px) -1px, calc(100% + 1px) calc(100% - 21px), 93% calc(100% - 2px), 83% calc(100% - 16px), 77% calc(100% - 7px), 51% calc(100% - 18px), 45% calc(100% - 3px), 33% calc(100% - 10px), 27% calc(100% - 3px), 15% calc(100% - 20px), 5% 100%, -1px calc(100% - 21px));
+  clip-path: polygon(-1px 0, calc(100% + 1px) 0, calc(100% + 1px) calc(100% - 20px), 93% calc(100% - 2px), 83% calc(100% - 16px), 77% calc(100% - 7px), 51% calc(100% - 18px), 45% calc(100% - 3px), 33% calc(100% - 10px), 27% calc(100% - 3px), 15% calc(100% - 20px), 5% 100%, -1px calc(100% - 20px));
+  -webkit-clip-path: polygon(-1px 0, calc(100% + 1px) 0, calc(100% + 1px) calc(100% - 20px), 93% calc(100% - 2px), 83% calc(100% - 16px), 77% calc(100% - 7px), 51% calc(100% - 18px), 45% calc(100% - 3px), 33% calc(100% - 10px), 27% calc(100% - 3px), 15% calc(100% - 20px), 5% 100%, -1px calc(100% - 20px));
 }
 @media only screen and (max-width: 767px) {
   .section_news_image, .section_contacts_image {
@@ -493,7 +521,7 @@ button {
 .section_news_grid {
   min-height: 40vh;
   width: 100%;
-  padding: 40px 10% 30px 10%;
+  padding: 40px 10%;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -516,7 +544,7 @@ button {
 }
 @media only screen and (max-width: 565px) {
   .section_news_grid {
-    padding: 20px 5% 10px 5%;
+    padding: 20px 5%;
     gap: 20px;
     grid-template: auto/1fr;
   }
@@ -743,34 +771,15 @@ button {
   gap: 6px;
 }
 .section_contacts_grid_form form #form_name, .section_contacts_grid_form form #form_email {
-  min-width: 100px;
-  padding: 12px 12px;
   display: inline;
-  outline: none;
-  border: 1px solid rgba(64, 64, 64, 0.5);
-  -webkit-transition: border 0.3s ease;
-  -moz-transition: border 0.3s ease;
-  transition: border 0.3s ease;
-}
-.section_contacts_grid_form form #form_name:focus, .section_contacts_grid_form form #form_email:focus {
-  border: 1px solid #000;
 }
 .section_contacts_grid_form form #form_message {
-  resize: none;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  resize: none;
   display: block;
-  padding: 6px 12px;
-  outline: none;
-  border: 1px solid rgba(64, 64, 64, 0.5);
   grid-area: 2/1/4/3;
-  -webkit-transition: border 0.3s ease;
-  -moz-transition: border 0.3s ease;
-  transition: border 0.3s ease;
-}
-.section_contacts_grid_form form #form_message:focus {
-  border: 1px solid #000;
 }
 .section_contacts_grid_form form > button {
   grid-area: 4/2/5/3;
@@ -795,8 +804,8 @@ button {
   align-items: center;
   text-align: center;
   color: #fff;
-  clip-path: polygon(-1px -1px, 5% 20px, 15% 0, 27% 17px, 33% 10px, 45% 17px, 51% 2px, 77% 13px, 83% 4px, 93% 18px, calc(100% + 1px) -1px, calc(100% + 1px) calc(100% - 21px), 93% calc(100% - 2px), 83% calc(100% - 16px), 77% calc(100% - 7px), 51% calc(100% - 18px), 45% calc(100% - 3px), 33% calc(100% - 10px), 27% calc(100% - 3px), 15% calc(100% - 20px), 5% 100%, -1px calc(100% - 21px));
-  -webkit-clip-path: polygon(-1px -1px, 5% 20px, 15% 0, 27% 17px, 33% 10px, 45% 17px, 51% 2px, 77% 13px, 83% 4px, 93% 18px, calc(100% + 1px) -1px, calc(100% + 1px) calc(100% - 21px), 93% calc(100% - 2px), 83% calc(100% - 16px), 77% calc(100% - 7px), 51% calc(100% - 18px), 45% calc(100% - 3px), 33% calc(100% - 10px), 27% calc(100% - 3px), 15% calc(100% - 20px), 5% calc(100% + 1px), -1px calc(100% - 21px));
+  clip-path: polygon(-1px 0, 5% 20px, 15% 0, 27% 17px, 33% 10px, 45% 17px, 51% 2px, 77% 13px, 83% 4px, 93% 18px, calc(100% + 1px) 0, calc(100% + 1px) calc(100% - 20px), 93% calc(100% - 2px), 83% calc(100% - 16px), 77% calc(100% - 7px), 51% calc(100% - 18px), 45% calc(100% - 3px), 33% calc(100% - 10px), 27% calc(100% - 3px), 15% calc(100% - 20px), 5% 100%, -1px calc(101% - 20px));
+  -webkit-clip-path: polygon(-1px 0, 5% 20px, 15% 0, 27% 17px, 33% 10px, 45% 17px, 51% 2px, 77% 13px, 83% 4px, 93% 18px, calc(100% + 1px) 0, calc(100% + 1px) calc(100% - 20px), 93% calc(100% - 2px), 83% calc(100% - 16px), 77% calc(100% - 7px), 51% calc(100% - 18px), 45% calc(100% - 3px), 33% calc(100% - 10px), 27% calc(100% - 3px), 15% calc(100% - 20px), 5% 100%, -1px calc(101% - 20px));
 }
 .line_block h3 {
   font: 400 24px/1.8 "Lato", sans-serif;
@@ -816,23 +825,18 @@ button {
 }
 
 .not_found_content {
-  flex: 1 0 auto;
-  height: 100vh;
-  z-index: 10;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 20px;
-  margin-bottom: -40px;
   background-image: url("/themes/default/images/bg_404.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
   filter: grayscale(70%);
-  clip-path: polygon(-1px -1px, calc(100% + 1px) -1px, calc(100% + 1px) calc(100% - 21px), 93% calc(100% - 2px), 83% calc(100% - 16px), 77% calc(100% - 7px), 51% calc(100% - 18px), 45% calc(100% - 3px), 33% calc(100% - 10px), 27% calc(100% - 3px), 15% calc(100% - 20px), 5% 100%, -1px calc(100% - 21px));
-  -webkit-clip-path: polygon(-1px -1px, calc(100% + 1px) -1px, calc(100% + 1px) calc(100% - 21px), 93% calc(100% - 2px), 83% calc(100% - 16px), 77% calc(100% - 7px), 51% calc(100% - 18px), 45% calc(100% - 3px), 33% calc(100% - 10px), 27% calc(100% - 3px), 15% calc(100% - 20px), 5% 100%, -1px calc(100% - 21px));
+  clip-path: polygon(-1px 0, calc(100% + 1px) 0, calc(100% + 1px) calc(100% - 20px), 93% calc(100% - 2px), 83% calc(100% - 16px), 77% calc(100% - 7px), 51% calc(100% - 18px), 45% calc(100% - 3px), 33% calc(100% - 10px), 27% calc(100% - 3px), 15% calc(100% - 20px), 5% 100%, -1px calc(100% - 20px));
+  -webkit-clip-path: polygon(-1px 0, calc(100% + 1px) 0, calc(100% + 1px) calc(100% - 20px), 93% calc(100% - 2px), 83% calc(100% - 16px), 77% calc(100% - 7px), 51% calc(100% - 18px), 45% calc(100% - 3px), 33% calc(100% - 10px), 27% calc(100% - 3px), 15% calc(100% - 20px), 5% 100%, -1px calc(100% - 20px));
 }
 @media only screen and (max-width: 767px) {
   .not_found_content {
@@ -870,6 +874,45 @@ button {
   padding: 0 10% 20px 10%;
 }
 
+.login_content {
+  text-align: center;
+}
+.login_content_form {
+  width: 300px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+@media only screen and (max-width: 565px) {
+  .login_content_form {
+    gap: 10px;
+  }
+}
+.login_content_form input {
+  width: 100%;
+}
+.login_content_form label {
+  font: 400 16px/1.8 "Montserrat", sans-serif;
+  width: 100%;
+  text-indent: 10px;
+  text-align: left;
+}
+.login_content_form label:has(+ input:focus) {
+  color: darkred;
+  font-weight: bold;
+}
+.login_content > a {
+  cursor: pointer;
+  text-align: center;
+  font: 400 16px/1.8 "Montserrat", sans-serif;
+}
+.login_content .hide {
+  display: none;
+}
+
 @media only screen and (max-width: 767px) {
   .open:before {
     -webkit-transition: all 0.3s ease;
@@ -897,8 +940,8 @@ button {
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.91);
   -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.91);
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.91);
-  clip-path: polygon(-1px -1px, calc(100% + 1px) -1px, calc(100% + 1px) calc(100% - 21px), 93% calc(100% - 2px), 83% calc(100% - 16px), 77% calc(100% - 7px), 51% calc(100% - 18px), 45% calc(100% - 3px), 33% calc(100% - 10px), 27% calc(100% - 3px), 15% calc(100% - 20px), 5% 100%, -1px calc(100% - 21px));
-  -webkit-clip-path: polygon(-1px -1px, calc(100% + 1px) -1px, calc(100% + 1px) calc(100% - 21px), 93% calc(100% - 2px), 83% calc(100% - 16px), 77% calc(100% - 7px), 51% calc(100% - 18px), 45% calc(100% - 3px), 33% calc(100% - 10px), 27% calc(100% - 3px), 15% calc(100% - 20px), 5% 100%, -1px calc(100% - 21px));
+  clip-path: polygon(-1px 0, calc(100% + 1px) 0, calc(100% + 1px) calc(100% - 20px), 93% calc(100% - 2px), 83% calc(100% - 16px), 77% calc(100% - 7px), 51% calc(100% - 18px), 45% calc(100% - 3px), 33% calc(100% - 10px), 27% calc(100% - 3px), 15% calc(100% - 20px), 5% 100%, -1px calc(100% - 20px));
+  -webkit-clip-path: polygon(-1px 0, calc(100% + 1px) 0, calc(100% + 1px) calc(100% - 20px), 93% calc(100% - 2px), 83% calc(100% - 16px), 77% calc(100% - 7px), 51% calc(100% - 18px), 45% calc(100% - 3px), 33% calc(100% - 10px), 27% calc(100% - 3px), 15% calc(100% - 20px), 5% 100%, -1px calc(100% - 20px));
 }
 .main_nav:before {
   content: "";
@@ -907,22 +950,10 @@ button {
   left: 0;
   width: 100%;
   height: 83px;
-  background-color: #fff;
+  background-color: #ededed;
   z-index: -1;
-  clip-path: polygon(-1px -1px, calc(100% + 1px) -1px, calc(100% + 1px) calc(100% - 21px), 93% calc(100% - 2px), 83% calc(100% - 16px), 77% calc(100% - 7px), 51% calc(100% - 18px), 45% calc(100% - 3px), 33% calc(100% - 10px), 27% calc(100% - 3px), 15% calc(100% - 20px), 5% 100%, -1px calc(100% - 21px));
-  -webkit-clip-path: polygon(-1px -1px, calc(100% + 1px) -1px, calc(100% + 1px) calc(100% - 21px), 93% calc(100% - 2px), 83% calc(100% - 16px), 77% calc(100% - 7px), 51% calc(100% - 18px), 45% calc(100% - 3px), 33% calc(100% - 10px), 27% calc(100% - 3px), 15% calc(100% - 20px), 5% 100%, -1px calc(100% - 21px));
-}
-.main_nav:after {
-  content: "";
-  position: absolute;
-  top: 61px;
-  left: 0;
-  width: 100%;
-  height: 22px;
-  background-color: rgba(128, 128, 128, 0.75);
-  z-index: 1;
-  clip-path: polygon(-1px -1px, 5% 20px, 15% 0, 27% 17px, 33% 10px, 45% 17px, 51% 2px, 77% 13px, 83% 4px, 93% 18px, calc(100% + 1px) -1px, calc(100% + 1px) calc(100% - 21px), 93% calc(100% - 2px), 83% calc(100% - 16px), 77% calc(100% - 7px), 51% calc(100% - 18px), 45% calc(100% - 3px), 33% calc(100% - 10px), 27% calc(100% - 3px), 15% calc(100% - 20px), 5% 100%, -1px calc(100% - 21px));
-  -webkit-clip-path: polygon(-1px -1px, 5% 20px, 15% 0, 27% 17px, 33% 10px, 45% 17px, 51% 2px, 77% 13px, 83% 4px, 93% 18px, calc(100% + 1px) -1px, calc(100% + 1px) calc(100% - 21px), 93% calc(100% - 2px), 83% calc(100% - 16px), 77% calc(100% - 7px), 51% calc(100% - 18px), 45% calc(100% - 3px), 33% calc(100% - 10px), 27% calc(100% - 3px), 15% calc(100% - 20px), 5% calc(100% + 1px), -1px calc(100% - 21px));
+  clip-path: polygon(-1px 0, calc(100% + 1px) 0, calc(100% + 1px) calc(100% - 20px), 93% calc(100% - 2px), 83% calc(100% - 16px), 77% calc(100% - 7px), 51% calc(100% - 18px), 45% calc(100% - 3px), 33% calc(100% - 10px), 27% calc(100% - 3px), 15% calc(100% - 20px), 5% 100%, -1px calc(100% - 20px));
+  -webkit-clip-path: polygon(-1px 0, calc(100% + 1px) 0, calc(100% + 1px) calc(100% - 20px), 93% calc(100% - 2px), 83% calc(100% - 16px), 77% calc(100% - 7px), 51% calc(100% - 18px), 45% calc(100% - 3px), 33% calc(100% - 10px), 27% calc(100% - 3px), 15% calc(100% - 20px), 5% 100%, -1px calc(100% - 20px));
 }
 .main_nav_link {
   padding: 18px 16px;
@@ -1146,15 +1177,14 @@ input#_1:checked + #menuIcon .ham .bottom {
 .main_footer {
   flex: 0 0 auto;
   width: 100%;
-  margin-top: 20px;
   padding: 60px 0 10px 0;
   background-color: #777;
   color: #777;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  clip-path: polygon(-1px -1px, 5% 20px, 15% 0, 27% 17px, 33% 10px, 45% 17px, 51% 2px, 77% 13px, 83% 4px, 93% 18px, calc(100% + 1px) -1px, calc(100% + 1px) calc(100% + 1px), -1px calc(100% + 1px));
-  -webkit-clip-path: polygon(-1px -1px, 5% 20px, 15% 0, 27% 17px, 33% 10px, 45% 17px, 51% 2px, 77% 13px, 83% 4px, 93% 18px, calc(100% + 1px) -1px, calc(100% + 1px) calc(100% + 1px), -1px calc(100% + 1px));
+  clip-path: polygon(-1px 0, 5% 20px, 15% 0, 27% 17px, 33% 10px, 45% 17px, 51% 2px, 77% 13px, 83% 4px, 93% 18px, calc(100% + 1px) 0, calc(100% + 1px) 101%, -1px 101%);
+  -webkit-clip-path: polygon(-1px 0, 5% 20px, 15% 0, 27% 17px, 33% 10px, 45% 17px, 51% 2px, 77% 13px, 83% 4px, 93% 18px, calc(100% + 1px) 0, calc(100% + 1px) 101%, -1px 101%);
 }
 .main_footer:hover {
   color: #000;
@@ -1237,6 +1267,291 @@ input#_1:checked + #menuIcon .ham .bottom {
 .main_footer_credits a {
   display: block;
   padding: 4px 0;
+}
+
+.banner {
+  margin: 0 auto;
+  max-height: 600px;
+}
+.banner-block {
+  position: relative;
+  max-height: 600px;
+}
+.banner-block img {
+  width: 100%;
+  max-height: 600px;
+}
+.banner-block .newsPage {
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  /* IE 9 */
+  -webkit-transform: translate(-50%, -50%);
+  /* Chrome, Safari, Opera */
+  transform: translate(-50%, -50%);
+}
+
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.slick-list:focus {
+  outline: none;
+}
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.slick-track:before, .slick-track:after {
+  content: "";
+  display: table;
+}
+.slick-track:after {
+  clear: both;
+}
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none;
+}
+[dir=rtl] .slick-slide {
+  float: right;
+}
+.slick-slide img {
+  display: block;
+}
+.slick-slide.slick-loading img {
+  display: none;
+}
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+.slick-initialized .slick-slide {
+  display: block;
+}
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
+/* Slider */
+.slick-loading .slick-list {
+  background: #fff url(".//files/img/ajax-loader.gif") center center/no-repeat;
+}
+
+/* Icons */
+@font-face {
+  font-family: "slick";
+  src: url("./fonts//fonts/slick.eot");
+  src: url("./fonts//fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts//fonts/slick.woff") format("woff"), url("./fonts//fonts/slick.ttf") format("truetype"), url("./fonts//fonts/slick.svg#slick") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Arrows */
+.slick-prev,
+.slick-next {
+  position: absolute;
+  display: block;
+  height: 20px;
+  width: 20px;
+  line-height: 0px;
+  font-size: 0px;
+  cursor: pointer;
+  background: transparent;
+  color: transparent;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  padding: 0;
+  border: none;
+  outline: none;
+}
+.slick-prev:hover, .slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+  outline: none;
+  background: transparent;
+  color: transparent;
+}
+.slick-prev:hover:before, .slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before {
+  opacity: 1;
+}
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+  opacity: 0.55;
+}
+.slick-prev:before,
+.slick-next:before {
+  font-family: "slick";
+  font-size: 20px;
+  line-height: 1;
+  color: white;
+  opacity: 0.9;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev {
+  left: 25px;
+}
+[dir=rtl] .slick-prev {
+  left: auto;
+  right: -25px;
+}
+.slick-prev:before {
+  content: "←";
+}
+[dir=rtl] .slick-prev:before {
+  content: "→";
+}
+
+.slick-next {
+  right: 25px;
+}
+[dir=rtl] .slick-next {
+  left: -25px;
+  right: auto;
+}
+.slick-next:before {
+  content: "→";
+}
+[dir=rtl] .slick-next:before {
+  content: "←";
+}
+
+/* Dots */
+.slick-dots {
+  position: absolute;
+  bottom: 35px;
+  list-style: none;
+  display: block;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+.slick-dots li button {
+  border: 0;
+  background: transparent;
+  display: block;
+  height: 20px;
+  width: 20px;
+  outline: none;
+  line-height: 0;
+  font-size: 0;
+  color: transparent;
+  padding: 5px;
+  cursor: pointer;
+}
+.slick-dots li button:hover, .slick-dots li button:focus {
+  outline: none;
+}
+.slick-dots li button:hover:before, .slick-dots li button:focus:before {
+  opacity: 1;
+}
+.slick-dots li button:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "\f8d9";
+  width: 20px;
+  height: 20px;
+  font-family: FontAwesome, sans-serif;
+  font-size: 22px;
+  line-height: 20px;
+  text-align: center;
+  color: #000;
+  opacity: 0.55;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@media only screen and (max-width: 565px) {
+  .slick-dots li button:before {
+    font-size: 11px;
+    line-height: 11px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .slick-dots li button:before {
+    font-size: 7.3333333333px;
+    line-height: 7.3333333333px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .slick-dots li button:before {
+    display: none;
+  }
+}
+.slick-dots li.slick-active button:before {
+  color: #fff;
+  opacity: 0.9;
+}
+@media only screen and (max-width: 565px) {
+  .slick-dots {
+    bottom: 12px;
+  }
 }
 
 body, html {

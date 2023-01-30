@@ -39,66 +39,152 @@
   }
 
   @mixin clip-path-both{
-    clip-path: polygon(-1px -1px,  5% 20px, 15% 0, 27% 17px, 33% 10px, 45% 17px, 51% 2px , 77% 13px, 83% 4px, 93% 18px, calc(100% + 1px) -1px,
-            calc(100% + 1px) calc(100% - 21px),
-            93% calc(100% - 2px),
-            83% calc(100% - 16px),
-            77% calc(100% - 7px),
-            51% calc(100% - 18px),
-            45% calc(100% - 3px),
-            33% calc(100% - 10px),
-            27% calc(100% - 3px),
-            15% calc(100% - 20px),
-            5% 100%,
-            -1px calc(100% - 21px)
+    clip-path: polygon(
+      /* A */
+      -1px 0,
+      /* AB side */
+      5% 20px,
+      15% 0,
+      27% 17px,
+      33% 10px,
+      45% 17px,
+      51% 2px ,
+      77% 13px,
+      83% 4px,
+      93% 18px,
+      /* B */
+      calc(100% + 1px) 0,
+      /* C */
+      calc(100% + 1px) calc(100% - 20px),
+      /* CD side */
+      93% calc(100% - 2px),
+      83% calc(100% - 16px),
+      77% calc(100% - 7px),
+      51% calc(100% - 18px),
+      45% calc(100% - 3px),
+      33% calc(100% - 10px),
+      27% calc(100% - 3px),
+      15% calc(100% - 20px),
+      5% 100%,
+      /* D */
+      -1px calc(101% - 20px)
     );
-    -webkit-clip-path: polygon(-1px -1px,  5% 20px, 15% 0, 27% 17px, 33% 10px, 45% 17px, 51% 2px , 77% 13px, 83% 4px, 93% 18px, calc(100% + 1px) -1px,
-            calc(100% + 1px) calc(100% - 21px),
-            93% calc(100% - 2px),
-            83% calc(100% - 16px),
-            77% calc(100% - 7px),
-            51% calc(100% - 18px),
-            45% calc(100% - 3px),
-            33% calc(100% - 10px),
-            27% calc(100% - 3px),
-            15% calc(100% - 20px),
-            5% calc(100% + 1px),
-            -1px calc(100% - 21px)
+    -webkit-clip-path: polygon(
+      /* A */
+      -1px 0,
+      /* AB side */
+      5% 20px,
+      15% 0,
+      27% 17px,
+      33% 10px,
+      45% 17px,
+      51% 2px ,
+      77% 13px,
+      83% 4px,
+      93% 18px,
+      /* B */
+      calc(100% + 1px) 0,
+      /* C */
+      calc(100% + 1px) calc(100% - 20px),
+      /* CD side */
+      93% calc(100% - 2px),
+      83% calc(100% - 16px),
+      77% calc(100% - 7px),
+      51% calc(100% - 18px),
+      45% calc(100% - 3px),
+      33% calc(100% - 10px),
+      27% calc(100% - 3px),
+      15% calc(100% - 20px),
+      5% 100%,
+      /* D */
+      -1px calc(101% - 20px)
     );
   }
 
   @mixin clip-path-bottom{
-    clip-path: polygon(-1px -1px, calc(100% + 1px) -1px,
-            calc(100% + 1px) calc(100% - 21px),
-            93% calc(100% - 2px),
-            83% calc(100% - 16px),
-            77% calc(100% - 7px),
-            51% calc(100% - 18px),
-            45% calc(100% - 3px),
-            33% calc(100% - 10px),
-            27% calc(100% - 3px),
-            15% calc(100% - 20px),
-            5% 100%,
-            -1px calc(100% - 21px)
+    clip-path: polygon(
+      /* A */
+      -1px 0,
+      /* B */
+      calc(100% + 1px) 0,
+      /* C */
+      calc(100% + 1px) calc(100% - 20px),
+      /* CD side */
+      93% calc(100% - 2px),
+      83% calc(100% - 16px),
+      77% calc(100% - 7px),
+      51% calc(100% - 18px),
+      45% calc(100% - 3px),
+      33% calc(100% - 10px),
+      27% calc(100% - 3px),
+      15% calc(100% - 20px),
+      5% 100%,
+      /* D */
+      -1px calc(100% - 20px)
     );
-    -webkit-clip-path: polygon(-1px -1px, calc(100% + 1px) -1px,
-            calc(100% + 1px) calc(100% - 21px),
-            93% calc(100% - 2px),
-            83% calc(100% - 16px),
-            77% calc(100% - 7px),
-            51% calc(100% - 18px),
-            45% calc(100% - 3px),
-            33% calc(100% - 10px),
-            27% calc(100% - 3px),
-            15% calc(100% - 20px),
-            5% 100%,
-            -1px calc(100% - 21px)
+    -webkit-clip-path: polygon(
+      /* A */
+      -1px 0,
+      /* B */
+      calc(100% + 1px) 0,
+      /* C */
+      calc(100% + 1px) calc(100% - 20px),
+      /* CD side */
+      93% calc(100% - 2px),
+      83% calc(100% - 16px),
+      77% calc(100% - 7px),
+      51% calc(100% - 18px),
+      45% calc(100% - 3px),
+      33% calc(100% - 10px),
+      27% calc(100% - 3px),
+      15% calc(100% - 20px),
+      5% 100%,
+      /* D */
+      -1px calc(100% - 20px)
     );
   }
 
   @mixin clip-path-top{
-    clip-path: polygon(-1px -1px, 5% 20px, 15% 0, 27% 17px, 33% 10px, 45% 17px, 51% 2px , 77% 13px, 83% 4px, 93% 18px, calc(100% + 1px) -1px, calc(100% + 1px) calc(100% + 1px), -1px calc(100% + 1px));
-    -webkit-clip-path: polygon(-1px -1px, 5% 20px, 15% 0, 27% 17px, 33% 10px, 45% 17px, 51% 2px , 77% 13px, 83% 4px, 93% 18px, calc(100% + 1px) -1px, calc(100% + 1px) calc(100% + 1px), -1px calc(100% + 1px));
+    clip-path: polygon(
+      /* A */
+      -1px 0,
+      /* AB side */
+      5% 20px,
+      15% 0,
+      27% 17px,
+      33% 10px,
+      45% 17px,
+      51% 2px ,
+      77% 13px,
+      83% 4px,
+      93% 18px,
+      /* B */
+      calc(100% + 1px) 0,
+      /* C */
+      calc(100% + 1px) 101%,
+      /* D */
+      -1px 101%
+    );
+    -webkit-clip-path: polygon(
+      /* A */
+      -1px 0,
+      /* AB side */
+      5% 20px,
+      15% 0,
+      27% 17px,
+      33% 10px,
+      45% 17px,
+      51% 2px ,
+      77% 13px,
+      83% 4px,
+      93% 18px,
+      /* B */
+      calc(100% + 1px) 0,
+      /* C */
+      calc(100% + 1px) 101%,
+      /* D */
+      -1px 101%
+    );
   }
 
   @mixin image-2x($image, $image2x) {

@@ -14,6 +14,7 @@
     <?php $version = Date('his');
     echo '<link rel="stylesheet" href="/themes/default/main.css?v='.$version.'">';
     ?>
+    <script src='/js/jquery.min.js'></script>
     <script src='/js/fontawesome.js'></script>
 </head>
 <body>
@@ -114,20 +115,45 @@
                     </ul>
                 </div>
             </div>
+            <div class="slick" id="gallery">
+                <div class="banner-block">
+                    <img src="/files/img/news_previews/news_1.jpg" class="gallery-img">
+                </div>
+                <div class="banner-block">
+                    <img src="/files/img/news_previews/news_2.jpg" class="gallery-img">
+                </div>
+                <div class="banner-block">
+                    <img src="/files/img/news_previews/news_3.jpg" class="gallery-img">
+                </div><div class="banner-block">
+                    <img src="/files/img/news_previews/news_4.jpg" class="gallery-img">
+                </div>
+                <div class="banner-block">
+                    <img src="/files/img/news_previews/news_5.jpg" class="gallery-img">
+                </div>
+                <div class="banner-block">
+                    <img src="/files/img/news_previews/news_6.jpg" class="gallery-img">
+                </div>
+                <div class="banner-block">
+                    <img src="/files/img/news_previews/news_7.jpg" class="gallery-img">
+                </div>
+                <div class="banner-block">
+                    <img src="/files/img/news_previews/news_8.jpg" class="gallery-img">
+                </div>
+            </div>
             <div class="line_block">
-                <div class="section_about_stats_item">
+                <div class="line_block_item">
                     <h3>100+</h3>
                     <p>Users</p>
                 </div>
-                <div class="section_about_stats_item">
+                <div class="line_block_item">
                     <h3>200+</h3>
                     <p>Posts</p>
                 </div>
-                <div class="section_about_stats_item">
+                <div class="line_block_item">
                     <h3>1000+</h3>
                     <p>Messages</p>
                 </div>
-                <div class="section_about_stats_item">
+                <div class="line_block_item">
                     <h3>12+</h3>
                     <p>Developers</p>
                 </div>
@@ -190,24 +216,30 @@
                     <a class="add_new" href=""><i class="fa-solid fa-plus"></i>&nbsp;Додати новину</a>
                 </div>
             </div>
+            <div class="line_block">
+                <div class="line_block_item">
+                    <h3>100+</h3>
+                    <p>News</p>
+                </div>
+                <div class="line_block_item">
+                    <h3>10+</h3>
+                    <p>Authors</p>
+                </div>
+                <div class="line_block_item">
+                    <h3>100+</h3>
+                    <p>Comments</p>
+                </div>
+                <div class="line_block_item">
+                    <h3>12+</h3>
+                    <p>Likes</p>
+                </div>
+            </div>
         </section>
         <section id="section_sp" class="section_sp">
-            <h1>STUDENTS PARLIAMENT</h1>
-            <h2>Діяльність студентського парламенту</h2>
-            <p>
-                <b>Студентський Парламент</b> – колектив творчих, ініціативних і небайдужих молодих людей. Їх об’єднує одна велика ідея – залишити свій слід в історії інституту та реалізація цікавих студентських проектів.
-                <br>
-                <br>
-                <b>Що робить Студпарламент:</b> <br>
-                &blacksquare;&nbsp;захищає права і законні інтереси студентів; <br>
-                &blacksquare;&nbsp;доносить позицію студентства до керівництва інституту; <br>
-                &blacksquare;&nbsp;сприяє участі студентів у громадському житті, навчальній та науково-дослідній роботі; <br>
-                &blacksquare;&nbsp;проводить студентські акції, заходи та програми; <br>
-                <br>
-                Найцікавішою діяльністю парламента є організація різних заходів. І звісно вже виникли свої традиції та свята, які щорічно святкуються у стінах нашого навчального закладу. Одними із таких є Хелловін, де костюмована вечірка та неймовірні фотозони не залишить байдужими нікого. Також є щотижневі тематичні заходи - вечори кіно та гри "Мафія".
-                <br>
-                Ми організовуємо дозвілля студентів нашого  інституту, аби хоч іноді нагадувати їм, що життя будь-якого студента не обмежується лише підготовкою до занять.            </p>
-            <a class="long_btn" href="/sp">Go to SP section</a>
+
+            <?php include_once "../public/pages/text_blocks/sp_tasks.html"; ?>
+
+            <a class="long_btn" href="/sp">Students parliament</a>
             <div class="section_sp_panel">
                 <div class="section_sp_panel_menu">
                     <a id="sp_menu_1" class="section_sp_panel_menu_item menu_active" onclick="switchBlock(this)">
@@ -231,29 +263,12 @@
                     <h2>Галерея</h2>
                 </section>
                 <section id="item_sp_menu_2" class="section_sp_panel_block">
-                    <h2>Положення</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, inventore iusto laborum qui ullam veritatis. Facere illo necessitatibus nulla perferendis!</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium eius incidunt, ipsum minima nisi voluptas.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut dicta dolores eligendi illo iusto laboriosam laudantium nemo nostrum repellendus.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum maiores minima porro!</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, inventore iusto laborum qui ullam veritatis. Facere illo necessitatibus nulla perferendis!</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium eius incidunt, ipsum minima nisi voluptas.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut dicta dolores eligendi illo iusto laboriosam laudantium nemo nostrum repellendus.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum maiores minima porro!</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium eius incidunt, ipsum minima nisi voluptas.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut dicta dolores eligendi illo iusto laboriosam laudantium nemo nostrum repellendus.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum maiores minima porro!</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum maiores minima porro!</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum maiores minima porro!</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum maiores minima porro!</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum maiores minima porro!</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum maiores minima porro!</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum maiores minima porro!</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum maiores minima porro!</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum maiores minima porro!</p>
+
+                    <?php include_once '../public/pages/text_blocks/polojennya.html'; ?>
+
                 </section>
                 <section id="item_sp_menu_3" class="section_sp_panel_block">
-                    <h2>Склад</h2>
+                    <?php include_once '../public/pages/text_blocks/sp_members.html';?>
                 </section>
             </div>
             <div class="line_block" >
@@ -298,7 +313,22 @@
         </section>
     </div>
     <?php include_once '../public/pages/parts/footer.php'; ?>
-    <script src="/js/holidays.js" type="text/javascript"></script>
+
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="/js/holidays.js" ></script>
+    <script type="text/javascript">
+        $('.slick').slick({
+            arrows: false,
+            dots: true,
+            autoplay: false,
+            infinite: true,
+            speed: 100,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            draggable: true,
+        });
+    </script>
     <script>
         onmousemove = (event) =>{
             let width = window.innerWidth;
